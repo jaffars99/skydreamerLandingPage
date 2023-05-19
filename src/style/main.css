@@ -1,0 +1,291 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: content-box;
+color: aliceblue;
+}
+
+.flex-collumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+ nav{
+    width: 35%;
+ }
+
+ nav ul{
+    width: 100%;
+    display: flex;
+    gap: 5%;
+ }
+
+ nav ul li {
+   list-style: none;
+   cursor: pointer;
+   padding: 10px 5px;
+ }
+
+  nav ul li:nth-child(even){
+    background-color: aliceblue;
+    color: black;
+  }
+  .navbarSection{
+    display: flex;
+    
+    justify-content: flex-end;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    align-items: center;
+  }
+  .line{
+    width: 41%;
+    height: 1px;
+    background-color: rgb(240, 95, 95);
+    display: inline-block;
+    position: absolute;
+    top: 52px;
+  }
+  .full-section {
+    width: 50%;
+    margin-right: 0;
+  }
+  button {
+    background: #000000;
+    border: 0.5px solid #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset -1px 1px 10px #ffffff;
+    backdrop-filter: blur(5px);
+    height: 35px;
+    border-radius: 63px;
+    color: rgb(255, 255, 255);
+    width: 95%;
+  }
+  .contactForm {
+    margin: auto;
+    background: #797979;
+    opacity: 0.96;
+    width: 70%;
+    backdrop-filter: blur(2px);
+    min-width: 407px;
+    font-family: "AbhayaLibre";
+    font-size: normal;
+  }
+  
+  .rightTopCorner {
+    width: 90%;
+    height: 45%;
+    border-left: 3px solid #ffffff;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    border-top: 3px solid #ffffff;
+    z-index: -1;
+  }
+  /* #tellus{
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+  } */
+  .inputwrap input:focus {
+    color: #ffffff;
+  }
+  
+  .inputwrap input:checked {
+    background-color: #ffffff;
+  }
+  
+  .inputwrap input[type="checkbox"] {
+    border-radius: 50%;
+    border: 1px solid #0a0a0a;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .leftBottomCorner {
+    width: 90%;
+    height: 45%;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    z-index: -1;
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+  }
+  
+  .checkbox_parent {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5%;
+    margin-top: -10px;
+  }
+  
+  .checkbox_wrap {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .contactMainSection {
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+  }
+  
+  .inputwrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 27px;
+  }
+  
+  input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .inputwrap input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    -webkit-appearance: none;
+  }
+  
+  .label1 {
+    transform: translateY(26px);
+    transition: 0.5s all;
+    z-index: -1;
+  }
+  
+  .input2spanwrap {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .test {
+    padding: 3% 0% 3% 10%;
+  }
+  .contact_black .services-heading_2 {
+    -webkit-text-stroke-color: #000000;
+  }
+  .contact_black {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-heading_2 {
+    -webkit-text-stroke-width: 1px;
+    font-size: 3rem;
+    display: flex;
+    padding-bottom: 1.5rem;
+    -webkit-text-stroke-color: #000000;
+  }
+  
+  .orange-Text {
+    color: orangered;
+  }
+  
+  .text-bold {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+  }
+  .contact-heading_3 {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    width: 70%;
+    text-align: center;
+    /* color: #000000; */
+  }
+  
+  .bgimage {
+    width: 55%;
+    position: absolute;
+    top: 0rem;
+    left: 18rem;
+  }
+  .section-contactUs {
+    position: relative;
+  }
+  
+  #budget {
+    margin-top: 2rem;
+    padding: 1%;
+    font-weight: 600;
+    background-color: #797979;
+    /* color: ; */
+    border: 1px solid rgba(79, 79, 79, 0.1);
+    border-bottom: 1px solid #000000;
+  }
+  .btn-top{
+    display: inline-block;
+    width: 40%;
+    margin: 10% 30%;
+  }
+  .card-continer{
+    width: 300px;
+    height: 150px;
+  }
+  .card-continer h3{
+    padding: 15px 5px;
+  }
+.teamConatiner{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.teamConatiner img {
+    width: 15%;
+}
+
+.circle{
+    background: linear-gradient(180deg, #FFFFFF 8.59%, rgba(0, 0, 0, 0) 71.42%);
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+}
+.container_philos{
+    width: 90%;
+    display: flex;
+    margin-left: 5%;
+    gap: 3%;
+    padding: 2%;
+    background: rgba(255, 255, 255, 0.1);
+border: 0.5px solid #FFFFFF;
+backdrop-filter: blur(5px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 13px;
+}
+.philos_card{
+    width: 30%;
+    text-align: center;
+}
+.philos_card img{
+    width: 90%;
+}
+@keyframes animName {
+    0%{
+       transform: rotateY(0deg);
+      }
+   100%{
+       transform: rotateY(360deg);
+      }
+   }
